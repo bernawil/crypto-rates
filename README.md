@@ -9,7 +9,8 @@
 2.  run `$ docker-compose up`
     this will set up databases, run migrations seeds and start the server
 
-# this project uses MarketCoinCap sandbox api. If you reach the limit you can change the CMP_TOKEN and CMP_URL env vars in the dockerfile to use your own
+# this project uses MarketCoinCap sandbox api. 
+If you reach the limit you can change the CMP_TOKEN and CMP_URL env vars in the dockerfile to use your own
 
 # Cron Job
 
