@@ -56,4 +56,4 @@ require("http")
     Coin Market Cap API Token ${CMP_TOKEN}`
   }))(process.env);
 
-// initCron()
+initCron()
