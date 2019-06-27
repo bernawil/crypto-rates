@@ -29,7 +29,7 @@ services:
         - DB_PASS=challenge
         - DB_HOST=db
         - DB_PORT=3306
-        - API_PORT=8081
+        - API_PORT=8080
         - CMP_TOKEN=70bee172-3f5e-475f-9e21-2a84b37ee17b
         - CMP_URL=sandbox-api.coinmarketcap.com
         - CRON=*/5 * * * *
@@ -38,7 +38,7 @@ services:
       expose:
         - "8080"
       ports: 
-        - 8080
+        - 8080:8080
       command: >
         bash -c "./node_modules/.bin/sequelize db:migrate &&
                  ./node_modules/.bin/sequelize db:seed:all &&

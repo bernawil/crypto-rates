@@ -42,18 +42,20 @@ require("http")
   DB_PORT,
   API_PORT,
   CMP_TOKEN,
+  CMP_URL,
   CRON
 }) =>
   logger.log({
     level: "verbose",
     message: `Initializing server with \
-    Environment ${NODE_ENV} \
-    Database Name ${DB_NAME} \
-    Database User ${DB_USER} \
-    Database Port ${DB_PORT} \
-    Server Listening on ${API_PORT} \
-    Cron job parameter ${CRON}
-    Coin Market Cap API Token ${CMP_TOKEN}`
+    Environment: ${NODE_ENV} \
+    Database Name: ${DB_NAME} \
+    Database User: ${DB_USER} \
+    Database Port: ${DB_PORT} \
+    Server Listening on: ${API_PORT} \
+    Cron job parameter: ${CRON}
+    Coin Market Cap API Token: ${CMP_TOKEN}
+    Coin Market Cap API URL: ${CMP_URL}`
   }))(process.env);
 
 initCron()
